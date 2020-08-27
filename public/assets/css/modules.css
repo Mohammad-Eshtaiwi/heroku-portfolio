@@ -944,7 +944,7 @@ ul.icons a {
 
 #main > section.one {
   background-color: #81918e;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../../images/banner.gif");
   background-blend-mode: multiply;
 }
 
@@ -1071,6 +1071,82 @@ ul.icons a {
     font-size: 1.25em;
   }
 
+  /* Footer */
+
+  #footer {
+    margin-left: 0;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 664px) {
+  /* Main */
+
+  #main {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    padding-bottom: 1px;
+    margin-left: 0;
+    margin: 0;
+  }
+
+  #main > section {
+    padding: 3em 0;
+  }
+
+  #main section.cover {
+    padding: 4em 0;
+  }
+}
+@media screen and (max-width: 663px) {
+  #main {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 663px) {
+  .container {
+    padding: 0 15px 0 15px;
+  }
+
+  /* List */
+
+  ul.icons a {
+    width: 2em;
+    font-size: 1.25em;
+  }
+
+  /* Main */
+
+  #main > section {
+    padding: 2em 0;
+  }
+
+  #main section.cover {
+    padding: 4em 0em;
+  }
+
+  #main section.cover header {
+    padding: 0 1em;
+  }
+
+  /* Footer */
+
+  #footer .copyright li {
+    display: block;
+    line-height: 1.25em;
+    border: 0;
+    padding: 0;
+    margin: 1em 0 0 0;
+  }
+
+  #footer .copyright li:first-child {
+    margin-top: 0;
+  }
   /* Header */
 
   #header {
@@ -1190,76 +1266,5 @@ ul.icons a {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
-  }
-
-  /* Footer */
-
-  #footer {
-    margin-left: 0;
-  }
-
-  /* Main */
-
-  #main {
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-transition: -moz-transform 0.5s ease;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    -ms-transition: -ms-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    padding-bottom: 1px;
-    margin-left: 0;
-  }
-
-  #main > section {
-    padding: 3em 0;
-  }
-
-  #main section.cover {
-    padding: 4em 0;
-  }
-}
-/* Mobile */
-
-@media screen and (max-width: 736px) {
-  .container {
-    padding: 0 15px 0 15px;
-  }
-
-  /* List */
-
-  ul.icons a {
-    width: 2em;
-    font-size: 1.25em;
-  }
-
-  /* Main */
-
-  #main > section {
-    padding: 2em 0;
-  }
-
-  #main section.cover {
-    padding: 4em 0em;
-  }
-
-  #main section.cover header {
-    padding: 0 1em;
-  }
-
-  /* Footer */
-
-  #footer .copyright li {
-    display: block;
-    line-height: 1.25em;
-    border: 0;
-    padding: 0;
-    margin: 1em 0 0 0;
-  }
-
-  #footer .copyright li:first-child {
-    margin-top: 0;
   }
 }
